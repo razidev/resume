@@ -1,0 +1,349 @@
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+.main2{
+  height: 100%;
+  width: 100%;
+  /* background:yellow; */
+  background-image: url(../img/me2.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.quote{
+  font-family: "Courier New", Monospace;
+}
+
+.value{
+  font-family:Verdana;
+}
+
+.office {
+  font-family:Book Antiqua;
+}
+
+.experiences {
+  font-family:initial;
+  font-size: 100%;
+}
+
+.logokerja{
+  background-size: 100% 100%;
+  height: 60%;
+  width: 80%;
+}
+
+.fa {
+  padding: 9px;
+  font-size: 30px;
+  width: 35px;
+  /* text-align: center; */
+  margin: 1px 1px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: #000000;
+  color: white;
+}
+
+.fa-envelope {
+  background: #000;
+  color: #fff;
+}
+
+hr.style18 { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #cfe6de, #8c8b8b, #cfe6de);
+  background-image: -moz-linear-gradient(left, #cfe6de, #8c8b8b, #cfe6de);
+  background-image: -ms-linear-gradient(left, #cfe6de, #8c8b8b, #cfe6de);
+  background-image: -o-linear-gradient(left, #cfe6de, #8c8b8b, #cfe6de); 
+} 
+
+span { display: block;  }
+#abilities ul > li { min-height: 25px; padding: 0px 0px; }
+#abilities ul > li:hover { background: #F2F2F2; }
+#abilities ul > li .ability-title { display: inline-block; width: 60%; margin-left: 15%}
+#abilities ul > li .ability-score { float: right;}
+#abilities ul > li .ability-score .glyphicon { 
+	color: #DFE0E0; 
+	font-size: 14px; 
+	 padding-right: -5px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#abilities ul > li .ability-score .glyphicon.filled { color: rgb(221, 224, 28); }
+
+#abilities ul > li:hover .ability-score .glyphicon { margin-left: 2px; }
+
+.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
+
+.swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /*background: #fff;*/
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#myBtn {
+  display: inline-block;
+  background-color: #000000;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#myBtn::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#myBtn:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#myBtn:active {
+  background-color: #555;
+}
+#myBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 500px) {
+  #myBtn {
+    margin: 30px;
+  }
+}
+
+.navbar {
+  opacity: 0.8;
+  margin-bottom: 0;
+  background-color: #fff;
+  transition: all 0.2s ease-out;
+}
+
+.navbar-container {
+  position: relative;
+}
+
+.nav .navbar-nav li{
+  float: left;
+  list-style: none;
+  position: absolute;
+  top: 7px;
+  right: 0;
+  font-size: 12px;
+  z-index: 101;
+  padding-right: 0px;
+  list-style: none;
+  color: #2E1C05;
+}
+
+.navbar .navbar-nav li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #2E1C05;
+  transition: all 0.2s ease-out;
+  float: left;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  transition: all 0.2s ease-out;
+}
+
+.navbar-scroll {
+  opacity: 1;
+}
+
+#top-social-menu {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  .navbar {
+    height: 120px;
+  }
+
+  .navbar-nav>li>a {
+    padding: 0;
+    margin-top: 35px;
+    margin-left: 50px;
+    line-height: 70px;
+  }
+
+  .navbar-brand {
+    font-size: 28px;
+    padding: 0;
+    height: 120px;
+    line-height: 120px;
+  }
+
+  #top-social-menu {
+    display: initial;
+  }
+
+  /* Navbar when scrolled */
+
+  .navbar-scroll {
+    height: 70px;
+  }
+
+  .navbar-scroll #top-social-menu {
+    display: none;
+    transition: all 0.2s ease-out;
+  }
+
+  .navbar-scroll .navbar-brand {
+    height: 70px;
+    line-height: 70px;
+  }
+
+  .navbar-scroll .navbar-nav>li>a {
+    opacity: 1;
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+/* # Hover Link Effect
+================================ */
+@media (min-width: 768px) {
+  .navbar-nav>li>a::after {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #2E1C05;
+    content: '';
+    opacity: 0;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    transform: translateY(-10px);
+  }
+
+  .navbar-nav>li>a:hover::after,
+  .navbar-nav>li>a:focus::after {
+    height: 2px;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* # Social menu
+================================ */
+
+#top-social-menu {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  font-size: 12px;
+  z-index: 101;
+  padding-right: 0px;
+  list-style: none;
+  color: #2E1C05;
+  transition: all 0.2s ease-out;
+}
+
+#top-social-menu li {
+  float: left;
+  padding: 0px 15px;
+}
+
+#top-social-menu li:last-child {
+  padding-right: 0;
+}
+
+#top-social-menu li a {
+  text-decoration: none;
+  color: #2E1C05;
+}
+
+#top-social-menu li a:hover {
+  text-decoration: none;
+  color: #543A1A;
+}
+
+#top-social-menu i {
+  font-size: 16px;
+  
+  transition: all 0.2s ease-in;
+}
+
+#top-social-menu i:hover {
+  text-decoration: none;
+  color: #543A1A;
+}
+
+#menus{
+  position: absolute;
+  top: 1px;
+  right: 0;
+  z-index: 101;
+  padding-right: 0px;
+  list-style: none;
+  color: #2E1C05;
+  transition: all 0.2s ease-out;
+}
+
+#menus li{
+  float: left;
+  padding: 5px 85px;
+  list-style: none;
+  right: 0;
+  font-size: 115%;
+  z-index: 101;
+  padding-right: 0px;
+  /*list-style: none;*/
+  color: #2E1C05;
+}
+
+#menus li a {
+  color: #543A1A;
+  transition: all 0.2s ease-out;
+}
